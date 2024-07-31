@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>My ToDo List</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="../assets/tags.png" class="img-logo" />
+        <span class="text-logo">assignIT</span>
+      </div>
+
+      <div class="control-wrapper">
+        <div class="control-item" id="showInput">
+          <img src="../assets/add-icon.svg" class="control-icon" />
+          <span class="control-text">Add Task Card</span>
+        </div>
+
+        <div class="control-item" id="clearDashboard">
+          <img src="../assets/clear-icon.svg" class="control-icon" />
+          <span class="control-text">Clear All Cards</span>
+        </div>
+
+        <div class="control-item" id="updateDashboard">
+          <img src="../assets/filter-icon.svg" class="control-icon" />
+          <span class="control-text">Filter Cards</span>
+        </div>
+
+        <div class="control-item-child">
+          <label for="input-summary">by :</label>
+          <select id="input-summary">
+            <option value="all">Show All</option>
+            <option value="project">Project Name</option>
+            <option value="personInCharge">Person In Charge</option>
+          </select>
+        </div>
+
+        <div class="control-item-child">
+          <label for="summary-value">value :</label>
+          <select id="summary-value"></select>
+        </div>
+      </div>
+
+      <dialog>
+        <div class="input-container">
+          <label for="input-task">Task Name:</label>
+          <input type="text" id="input-task" name="taskName" required />
+          <div class="error-message" id="input-task"></div>
+        </div>
+        <div class="input-container">
+          <label for="input-project">Project Name:</label>
+          <input type="text" id="input-project" name="projectName" required />
+          <div class="error-message" id="input-project"></div>
+        </div>
+        <div class="input-container">
+          <label for="input-personInCharge">Person In-Charge:</label>
+          <input
+            type="text"
+            id="input-personInCharge"
+            name="personInCharge"
+            required
+          />
+          <div class="error-message" id="input-personInCharge"></div>
+        </div>
+        <div class="input-container">
+          <label for="input-dueDate">Due Date:</label>
+          <input type="date" id="input-dueDate" name="dueDate" required />
+          <div class="error-message" id="input-dueDate"></div>
+        </div>
+        <div class="input-container">
+          <label for="input-status">Select Status:</label>
+          <select id="input-status">
+            <option value="planned" selected>Planned</option>
+            <option value="inProgress">In Progress</option>
+            <option value="completed">Completed</option>
+          </select>
+        </div>
+
+        <div class="control-item" id="createTask">
+          <img src="../assets/add-icon.svg" class="control-icon" />
+          <span class="control-text">Add Task Card</span>
+        </div>
+      </dialog>
+    </div>
+
+    <div class="dashboard">
+      <div class="dashboard-child" id="planned">
+        <div class="dashboard-title">Planned</div>
+      </div>
+
+      <div class="dashboard-child" id="inProgress">
+        <div class="dashboard-title">In Progress</div>
+      </div>
+
+      <div class="dashboard-child" id="completed">
+        <div class="dashboard-title">Completed</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+body {
+  margin: 0px;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+::backdrop {
+  background-color: rgb(255, 255, 255, 0.55);
+}
+
+dialog[open] {
+  font-size: 1.2rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-color: rgb(11, 118, 160);
+}
+
+dialog[open] .input-container {
+  position: relative;
+  display: flex;
+  margin: 10px 0px 15px 0px;
+}
+
+dialog[open] label {
+  flex: 0 0 160px;
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(233, 215, 135);
+  margin-right: 5px;
+}
+
+dialog[open] input,
+select {
+  flex: 1;
+}
+
+dialog[open] input:invalid {
+  background-color: rgb(228, 192, 192);
+  border: 1px red dashed;
+}
+
+dialog[open] input:focus,
+select:focus {
+  background-color: rgb(233, 215, 135);
+}
+
+dialog[open] .control-item {
+  margin-left: 165px;
+}
+
+dialog[open] #input-task-error,
+#input-project-error,
+#input-personInCharge-error,
+#input-dueDate-error {
+  position: absolute;
+  left: 162px;
+  top: -15px;
+  font-size: 0.8rem;
+  color: rgb(250, 88, 88);
+  margin-left: 5px;
+}
+
+.header {
+  width: 15vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(11, 118, 160);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin: 5px 5px 95px 5px;
+}
+
+.logo .img-logo {
+  height: 90%;
+}
+
+.logo .text-logo {
+  font-size: 2.25rem;
+  font-weight: bolder;
+  color: rgb(233, 215, 135);
+  margin: 10px 0px 0px 5px;
+}
+
+.control-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 5px 0px 5px;
+}
+
+.control-item {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.control-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.control-text {
+  font-size: 1.5rem;
+  color: rgb(233, 215, 135);
+  margin-left: 10px;
+}
+
+.control-item-child {
+  display: flex;
+  margin: 5px 0px 0px 50px;
+}
+
+.control-item-child label {
+  display: flex;
+  justify-content: end;
+  color: rgb(233, 215, 135);
+  width: 50px;
+  margin-right: 5px;
+}
+
+.dashboard {
+  width: 85vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(202, 238, 251);
+}
+
+.dashboard-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin: 15px 0px 15px 0px;
+  background-color: rgb(255, 255, 255, 0.55);
+  box-shadow: 2px 5px 5px grey;
+}
+
+.dashboard-child .dashboard-title {
+  font-size: 1.5rem;
+  color: rgb(233, 196, 83);
+  font-weight: bold;
+  margin: 5px 0px 50px 0px;
+  text-decoration: underline;
+}
+
+.card-container {
+  width: 80%;
+  margin: 5px 0px 20px 0px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 30px;
+  padding: 15px;
+
+  box-shadow: 2px 2px 2px grey;
+}
+
+.card-container .card-task {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-container div {
+  margin-bottom: 5px;
+}
+
+.card-container button {
+  margin-right: 5px;
+}
