@@ -8,6 +8,7 @@ This is a classic to-do app initially developed as part of The Odin Project modu
 
 ## Release 1.0.0 - Initial Preview
 
+https://github.com/ibrahimcode85/todo_app/releases/tag/v1.0.0
 This release includes all the basic features to create to-do cards, presented on a dashboard categorized by their broad status: Planned, In Progress, or Completed.
 
 ### Getting Started
